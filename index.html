@@ -211,3 +211,35 @@
         }
       });
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  var video = document.getElementById('my-video');
+  var hls = new Hls();
+
+  function changeVideoSource(newSource) {
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    video.setAttribute('src', newSource);
+    hls.loadSource(newSource);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+      video.play();
+    });
+  }
+
+  if (Hls.isSupported()) {
+    hls.loadSource('https://hostengine.live/live/wrecks82/habsiptv82/231004.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+      video.play();
+    });
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'https://hostengine.live/live/wrecks82/habsiptv82/231004.m3u8';
+    video.addEventListener('loadedmetadata', function () {
+      video.play();
+    });
+  }
+</script>
+
