@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box; /* include padding and border widths in height and width calculations */
+}
+iframe {
+  width: 100%;
+  height: 30vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%; /* added width */
+  margin: 0 auto;
+}
+
+.grid-item {
+  border: 2px solid white;
+  background-color: #ffffff;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* box shadow */
+}
+
+.grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.grid-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+}
+.hidden {
+  display: none;
+}
+
+.see-more {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.see-less {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.pv {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+}
+p {
+  font-size: 11px;
+}
+font {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.rectangular-div {
+  opacity: 95%;
+  top: 50%;
+  left: 50%;
+  width:90vw;
+  height: ;
+  background-color: #ffa6a6;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.rectangular-div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rectangular-div p {
+  opacity: 90%;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+h3 {
+  color: #ffff00;
+}
+.premium-iptv {
+  background-color: #000; /* set the background color to black */
+  color: #fff; /* set the font color to white */
+  padding: 20px; /* set the padding to your desired value */
+  border-radius: 10px; /* set the border radius to your desired value */
+  text-align: center; /* center the text */
+}
+
+.premium-iptv h2 {
+  font-size: 30px; /* set the font size to your desired value */
+  margin-top: 0; /* remove any top margin */
+}
+
+.premium-iptv p {
+  font-size: 15px; /* set the font size to your desired value */
+  margin-bottom: 20px; /* add some bottom margin */
+}
+
+.premium-iptv a {
+  display: inline-block; /* make the link a block element */
+  background-color: #fff; /* set the background color to white */
+  color: #000; /* set the font color to black */
+  padding: 10px 20px; /* set the padding to your desired value */
+  border-radius: 5px; /* set the border radius to your desired value */
+  text-decoration: none; /* remove the underline */
+}
+.stream-buffering {
+  width: 90%;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.streaming-problem {
+  width: 90%;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.stream-buffering i, .streaming-problem i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.heading-solution h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.heading-solution p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.text-warning {
+  color: #f0ad4e; /* orange color */
+}
+.hidden-content {
+        display: none;
+}
+
+#toggle-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: 5%;
+  width: 10%;
+  padding: 4px;
+  cursor: pointer;
+}
+
+#toggle-button:hover {
+  background-color: #0069d9;
+}
+
+#toggle-button:focus {
+  outline: none;
+}
+
+#toggle-button .fa-eye-slash {
+  display: none;
+}
+
+#toggle-button .fa-eye-slash.visible {
+  display: inline-block;
+}
+
+#toggle-button .fa-eye.visible {
+  display: none;
+}
+h4 {
+  color: #fff;
+}
