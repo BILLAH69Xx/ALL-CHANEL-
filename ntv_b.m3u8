@@ -1,0 +1,10 @@
+#EXTM3U
+#EXT-X-VERSION:3
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1024000,RESOLUTION=1280x720
+/single/slang/ntv_b_576/ntv_b_576.m3u8-bitrate=1000000&channel=ntv_b_576&gp_id=
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=768000,RESOLUTION=854x480
+/single/slang/ntv_b_320/ntv_b_320.m3u8-bitrate=768000&channel=ntv_b_320&gp_id=
+
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=512000,RESOLUTION=640x360
+/single/slang/ntv_b_160/ntv_b_160.m3u8-bitrate=512000&channel=ntv_b_160&gp_id=
